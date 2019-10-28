@@ -5,6 +5,12 @@ navbar:
   left:
     - text: "Index"
       href: index.html
+    - text: "About me"
+      href: resume.html
+    - text: "About me"
+      href: resume.html
+    - text: "Plots"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<bl2789@cumc.columbia.edu>
     - icon: fa-github fa-lg
