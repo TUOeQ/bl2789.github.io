@@ -1,0 +1,17 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  left:
+    - text: "Index"
+      href: index.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<bl2789@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/TUOeQ/
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+  
