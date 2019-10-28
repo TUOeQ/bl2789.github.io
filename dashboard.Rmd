@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Dash board for Instacart"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -7,31 +7,104 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+library(tidyverse)
 library(flexdashboard)
 library(p8105.datasets)
+library(data.table)
+library(plotly)
+library(dplyr)
+library(ggplot2)
 ```
 
-Column {data-width=650}
+Column {data-width=600}
 -----------------------------------------------------------------------
 
 ### Chart A
 
 ```{r}
+data("instacart")
 
 ```
 
-Column {data-width=350}
+Column {data-width=400}
 -----------------------------------------------------------------------
 
 ### Chart B
 
 ```{r}
+aisle = instacart%>%
+        group_by(aisle)%>%
+        summarize(count=n()) %>%
+        arrange(desc(count))%>%
+        top_n(5)
 
+   plot_ly(aisle, x = ~reorder(aisle,count), y = ~count, color = ~aisle, type = "bar")
+
+
+#bar_ggplot = 
+  
+ # ggplot(aisle,aes(x = reorder(aisle,count), y = count))+
+  #geom_bar(stat="identity",fill= "lightblue3",alpha = .7 )+ 
+  #coord_flip()+
+  #labs(
+   # title = " Top 10 popular Aisles",
+    #x = "Aisle name",
+    #y = "Items ordered most",
+   # caption = "Data from INSTACART")+
+  #geom_text(aes(label = count, y = 1.39*(count)), size = 2, col = "darkblue")
+
+#ggplotly(bar_ggplot)
 ```
 
 ### Chart C
 
 ```{r}
+Ice_cream = instacart%>%
+              filter(aisle == "ice cream ice")%>%
+              select(product_name)
+Ordered_time_coffee = instacart%>%
+              filter(aisle == "ice cream ice")%>%
+              filter(product_name %like% "Coffee")%>%
+              group_by(order_dow) %>% 
+              summarise(mean_hours = mean(order_hour_of_day)) %>% 
+              mutate(product_name='Coffee Ice Cream')%>%
+              select(product_name,order_dow,mean_hours)
 
+Ordered_time_vanilla = instacart%>%
+              filter(aisle == "ice cream ice")%>%
+              filter(product_name %like% "Vanilla")%>%
+              group_by(order_dow) %>% 
+              summarise(mean_hours = mean(order_hour_of_day)) %>% 
+              mutate(product_name='Vanilla Ice Cream')%>%
+              select(product_name,order_dow,mean_hours)
+
+Ordered_time_chocolate= instacart%>%
+              filter(aisle == "ice cream ice")%>%
+              filter(product_name %like% "Choco")%>%
+              group_by(order_dow) %>% 
+              summarise(mean_hours = mean(order_hour_of_day)) %>% 
+              mutate(product_name='Chocolate Ice Cream')%>%
+              select(product_name,order_dow,mean_hours)
+
+Ordered_time_fruit= instacart%>%
+              filter(aisle == "ice cream ice")%>%
+              filter(product_name %like% c("Fruit","Strawberry",
+                     "Coconut","Raspberry","Lemon"))%>%
+              group_by(order_dow) %>% 
+              summarise(mean_hours = mean(order_hour_of_day)) %>% 
+              mutate(product_name='Fruit Ice Cream')%>%
+              select(product_name,order_dow,mean_hours)
+
+line = 
+
+  ggplot(rbind(Ordered_time_coffee,Ordered_time_vanilla,Ordered_time_chocolate,
+             Ordered_time_fruit), aes(x = order_dow, y = mean_hours, group = product_name, color = product_name))+   
+  geom_point()+
+  geom_line() +
+  labs()+
+  scale_x_continuous (breaks = c(0:6),
+  labels = c("Sunday", "Monday","Tuesday", " Wednesday" , "Thursday", "Friday", "Saturday"))
+
+ggplotly(line)
 ```
 
