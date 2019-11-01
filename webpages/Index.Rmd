@@ -1,7 +1,22 @@
+---
+title: "Bingkun Luo"
 
+output: html_document
 ---
+
 Welcome to my VERY FIRST personal website!
----
 
 Bingkun Luo
 
+
+<center>
+
+<img src="./images/Profile.JPG" style="width:55%">
+
+## About me
+
+[Resume](resume.html)
+
+## Plots I created using R 
+
+[Dashboard](dashboard.html)

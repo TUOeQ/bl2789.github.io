@@ -20,10 +20,22 @@ library(ggplot2)
 Column {data-width=600}
 -----------------------------------------------------------------------
 
-### Chart A
+### Chart A [Back to homepage](https://tuoeq.github.io/bl2789.github.io/webpages/Index.html)
 
 ```{r}
 data("instacart")
+
+
+popular = instacart%>%
+         filter(order_number>25, 
+                order_dow == 0)%>%
+                drop_na()%>%
+  
+         group_by(department)
+          
+
+plot_ly(popular, labels = ~department, values = ~order_number, type = 'pie',colors = "Set2", alpha = 0.5) %>%
+  layout(title = 'Allocation of purchasing trend on Sunday')
 
 ```
 
