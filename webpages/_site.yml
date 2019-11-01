@@ -4,9 +4,7 @@ navbar:
   title: "Home"
   left:
     - text: "Index"
-      href: index.html
-    - text: "About me"
-      href: resume.html
+      href: Index.html
     - text: "About me"
       href: resume.html
     - text: "Plots"
@@ -20,4 +18,6 @@ output:
     toc: true
     toc_float: true
     theme: cerulean
+  
+
   

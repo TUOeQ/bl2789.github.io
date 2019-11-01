@@ -1,5 +1,6 @@
 ---
 title: "Dash board for Instacart"
+
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -101,7 +102,10 @@ line =
              Ordered_time_fruit), aes(x = order_dow, y = mean_hours, group = product_name, color = product_name))+   
   geom_point()+
   geom_line() +
-  labs()+
+  labs(title = " Average order hour for Ice cream",
+    x = "days of week",
+    y = "Time of the day",
+    caption = "Data from INSTACART")+
   scale_x_continuous (breaks = c(0:6),
   labels = c("Sunday", "Monday","Tuesday", " Wednesday" , "Thursday", "Friday", "Saturday"))
 
