@@ -3,9 +3,9 @@ output_dir: "."
 navbar:
   right:
     - text: "Homepage"
-      href: index.html
+      href: webpages/index.html
     - text: "About me"
-      href: resume.html
+      href: webpages/resume.html
     - text: "Plots"
       href: dashboard.html
     - icon: fa-envelope fa-lg
