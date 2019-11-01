@@ -3,11 +3,11 @@ output_dir: "."
 navbar:
   right:
     - text: "Homepage"
-      href: webpages/Index.html
+      href: Index.html
     - text: "About me"
-      href: webpages/resume.html
+      href: resume.html
     - text: "Plots"
-      href: dashboard.html
+      href: https://tuoeq.github.io/bl2789.github.io/dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<bl2789@cumc.columbia.edu>
     - icon: fa-github fa-lg
