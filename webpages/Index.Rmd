@@ -19,4 +19,4 @@ Bingkun Luo
 
 ## Plots I created using R 
 
-[Dashboard](dashboard.html)
+[Dashboard](https://tuoeq.github.io/bl2789.github.io/dashboard.html)
