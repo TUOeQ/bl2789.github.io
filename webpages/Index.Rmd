@@ -1,8 +1,7 @@
 
 ---
-
+Welcome to my VERY FIRST personal website!
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Bingkun Luo
+

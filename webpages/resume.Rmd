@@ -1,17 +1,58 @@
 ---
+title: "Resume"
 
+output: html_document
 ---
+<center>
+
+<img src="./images/image1.JPG" style="width:55%">
+
+
+## About me {.tabset}
+
+### Education
+
+#### Columbia University, Mailman School of Public Health, New York, NY
+Master of Science in Biostatistics                                                                                                                             August 2019 – Present
+
+#### University of Illinois at Urbana-Champaign	Champaign-Urbana, IL
+Bachelor of Science in Actuarial Science and Statistic                                                                              	          August 2015 – May 2019
+
+●	Computational Skills: R, SAS
+
+
+### Work Experience
+
+#### IQVIA                                                                                                                                                                                Shanghai, China
+Consultant intern                                                                                                                                                              May-August 2019
+
+●	Submit weekly report and assist consultant associate to produce final PowerPoint that addressed the effect of healthcare reform on public hospital clinical trial and biomedical company, especially targeted therapy drugs
 
 
 
 
 
-```{r image-ref-for-in-text, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Some cool caption', out.width='0.75\\linewidth', fig.pos='H'}
+#### Shanghai Life Insurance LIANIN	Shanghai, China
+Actuarial Product Development Intern	July-September 2018 
+
+
+●	Conducted market research for Life and Accident insurance to propose new insurance planning, particularly in the aspect of providing products to large cooperation clients
 
 
 
-knitr::include_graphics("./webpages/resume.pdf")
-```
 
-[Resume](./webpages/resume.pdf)
-<img src="./webpages/resume.pdf" style="width:75%">
+#### Shanghai SICC Construction Engineering Consulting Co., Ltd. 	Shanghai, China
+Operations Intern	July-August 2016
+
+
+●	Assisted in analyzing project cost including material, labor, marketing cost and used Excel to produce comprehensive cost/revenue report to industrial companies.
+
+
+
+### Selected Courses
+
+●	Linear Algebra and Financial Applications, Methods of Applied Statistics, Applied Regression and Design, Applied Bayesian Analysis
+
+### Life as graduate students
+
+<img src="./images/image2.JPG" style="width:75%">

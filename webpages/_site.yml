@@ -1,9 +1,8 @@
 name: "Yay internet!"
 output_dir: "."
 navbar:
-  title: "Home"
-  left:
-    - text: "Index"
+  right:
+    - text: "Homepage"
       href: Index.html
     - text: "About me"
       href: resume.html
@@ -17,7 +16,7 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: readable
   
 
   
