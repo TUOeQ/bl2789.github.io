@@ -5,6 +5,7 @@ output: html_document
 ---
 <center>
 
+
 <img src="./images/image1.JPG" style="width:55%">
 
 
