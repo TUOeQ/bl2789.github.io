@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -237,6 +236,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,6 +265,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -387,9 +393,11 @@ div.tocify {
 <h2>About me</h2>
 <div id="education" class="section level3">
 <h3>Education</h3>
+<p><img src="images/image2.jpg" style="width:75%"></p>
 <div id="columbia-university-mailman-school-of-public-health-new-york-ny" class="section level4">
 <h4>Columbia University, Mailman School of Public Health, New York, NY</h4>
 <p>Master of Science in Biostatistics August 2019 – Present</p>
+<p>● Computational Skills: R, SAS, Sql, Mplus</p>
 </div>
 <div id="university-of-illinois-at-urbana-champaign-champaign-urbana-il" class="section level4">
 <h4>University of Illinois at Urbana-Champaign Champaign-Urbana, IL</h4>
@@ -399,6 +407,13 @@ div.tocify {
 </div>
 <div id="work-experience" class="section level3">
 <h3>Work Experience</h3>
+<div id="affamed-therapeutics-limited-shanghai-china" class="section level4">
+<h4>AffaMed Therapeutics Limited Shanghai, China</h4>
+<p>Business Development intern January 2020- now</p>
+<p></br> ● Conducted literature reviews from 30 ophthalmology journal articles and entered KOLs’ guidelines into Excel from 2013-2019 for surgeons and business development team to identify treatments for patients</p>
+<p>● Identified global market shares for general vision care pharmaceuticals and surgical equipment, targeting the dry eye diseases</p>
+<p>● Analyze the annual reports from leading to ophthalmology companies determine successful pipeline products in vision care</p>
+</div>
 <div id="iqvia-shanghai-china" class="section level4">
 <h4>IQVIA Shanghai, China</h4>
 <p>Consultant intern May-August 2019</p>
@@ -421,7 +436,16 @@ div.tocify {
 </div>
 <div id="life-as-graduate-students" class="section level3">
 <h3>Life as graduate students</h3>
-<p><img src="images/image2.jpg" style="width:75%"></p>
+<div id="data-science-project" class="section level4">
+<h4>Data Science project</h4>
+<p></br></p>
+<h1 style="color:DodgerBlue;">
+<i>“Don’t do drugs!”</i>
+</h1>
+<p></br></p>
+<p>please view my screencast for <a href="https://jesse925.github.io/p8105_final_project/">it</a> here:</p>
+<iframe src="https://www.youtube.com/embed/7tEiZqX-DDY" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+</div>
 </div>
 </div>
 

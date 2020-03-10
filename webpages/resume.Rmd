@@ -13,8 +13,12 @@ output: html_document
 
 ### Education
 
+<img src="./images/image2.JPG" style="width:75%">
+
 #### Columbia University, Mailman School of Public Health, New York, NY
 Master of Science in Biostatistics                                                                                                                             August 2019 – Present
+
+● Computational Skills: R, SAS, Sql, Mplus
 
 #### University of Illinois at Urbana-Champaign	Champaign-Urbana, IL
 Bachelor of Science in Actuarial Science and Statistic                                                                              	          August 2015 – May 2019
@@ -24,8 +28,20 @@ Bachelor of Science in Actuarial Science and Statistic                          
 
 ### Work Experience
 
+####  AffaMed Therapeutics Limited                                        Shanghai, China 
+
+Business Development intern                                                                                                                                         January 2020- now
+
+</br>
+● Conducted literature reviews from 30 ophthalmology journal articles and entered KOLs’ guidelines into Excel from 2013-2019 for surgeons and business development team to identify treatments for patients 
+
+● Identified global market shares for general vision care pharmaceuticals and surgical equipment, targeting the dry eye diseases 
+
+● Analyze the annual reports from leading to ophthalmology companies determine successful pipeline products in vision care 
+
+
 #### IQVIA                                                                                                                                                                                Shanghai, China
-Consultant intern                                                                                                                                                              May-August 2019
+Consultant intern                                                                                                                                                        May-August 2019
 
 ●	Submit weekly report and assist consultant associate to produce final PowerPoint that addressed the effect of healthcare reform on public hospital clinical trial and biomedical company, especially targeted therapy drugs
 
@@ -56,4 +72,22 @@ Operations Intern	July-August 2016
 
 ### Life as graduate students
 
-<img src="./images/image2.JPG" style="width:75%">
+#### Data Science project
+
+</br>
+
+<h1 style="color:DodgerBlue;"><i>"Don't do drugs!"</i></h1> 
+
+</br>
+
+
+please view my screencast for [it](https://jesse925.github.io/p8105_final_project/) here:
+
+```{r echo=FALSE}
+library("htmltools")
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=7tEiZqX-DDY")
+```
+
+
+
